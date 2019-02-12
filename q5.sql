@@ -1,0 +1,1 @@
+select member.name, count(1) from member, checkout_item where member.id=checkout_item.member_id group by checkout_item.member_id having count(1) >1;
